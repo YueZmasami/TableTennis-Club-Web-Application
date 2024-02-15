@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<link rel='stylesheet' href='style.css'/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="javascript/getComments.js"></script>
+<script src="javascript/postComments.js"></script>
+  <script>
+    function updateCharacterCount(textarea) {
+      var maxLength = 280;
+      var currentLength = textarea.value.length;
+      var remainingLength = maxLength - currentLength;
+
+      document.getElementById('countDown').innerText = remainingLength;
+    }
+    </script>
+  <script>window.onload = function() {
+    getComments();
+  };
+  </script>
+
+</head>
+<body>
+<!--在这里添加assignment4的内容-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 ">
+      <nav class="navbar navbar-expand-sm bg-light">
+        <img src="imgs4Assign4/pingpang logo.png" class="imglogo">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#newscard" >News</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#lastestNews">Lastest News</a>
+              <a class="dropdown-item" href="#updatesNews">Updates</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gamecard">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#leaderscard">Leadership</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="AboutUs.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Useful Links</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://directory.ittf.com/#/home"  target="_blank">  ITTF </a>
+              <a class="dropdown-item" href="https://www.youtube.com/"  target="_blank"> YOUTUBE</a>
+              <a class="dropdown-item" href="https://edition.cnn.com/"  target="_blank"> CNN </a>
+              <a class="dropdown-item" href="https://worldtabletennis.com/"  target="_blank"> WTT </a>
+              <a class="dropdown-item" href="https://www.tabletennisengland.co.uk/competitions/"  target="_blank"> TTE</a>
+
+
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="card" id="newscard">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card" id="lastestNews">
+                <div class="card-body">
+                  <h5 class="card-title">Lastest News </h5>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card news">
+                        <img src="imgs4Assign4/news1.png" class="card-img-top" alt="Img" >
+                        <div class="card-body">
+                          <p class="card-text"> Manx table tennis twins excited for first Island Games in Guernsey</p>
+                          <a href="https://www.bbc.com/news/av/world-europe-isle-of-man-66114176" class="btn btn-primary">See More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card news">
+                        <img src="imgs4Assign4/news2.jpeg" class="card-img-top" alt="Img" >
+                        <div class="card-body">
+                          <p class="card-text"> Bidding Opens for ITTF World Para Table Tennis Championships 2026</p>
+                          <a href="https://www.ittf.com/2023/09/21/bidding-opens-for-ittf-world-para-table-tennis-championships-2026/" class="btn btn-primary">See More</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card news">
+                        <img src="imgs4Assign4/news3.jpeg" class="card-img-top" alt="Img" >
+                        <div class="card-body">
+                          <p class="card-text">Good Form Continues in Japan, Australian and Thai Names Predominant  </p>
+                          <a href="https://www.ittf.com/2023/09/18/road-to-paris-2024-first-teams-secure-olympic-berths-mixed-doubles-pairs-join-the-ranks/" class="btn btn-primary">See More</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card" id="updatesNews">
+                <div class="card-body">
+                  <h5 class="card-title">Updates </h5>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card news">
+                        <img src="imgs4Assign4/news4.jpeg" class="card-img-top" alt="Img" >
+                        <div class="card-body">
+                          <p class="card-text"> Poland Centre Stage at ITTF European Para Championships</p>
+                          <a href="https://www.ittf.com/2023/09/09/poland-centre-stage-at-ittf-european-para-championships/" class="btn btn-primary">See More</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card news">
+                        <img src="imgs4Assign4/news5.jpeg" class="card-img-top" alt="Img" >
+                        <div class="card-body">
+                          <p class="card-text"> Champions Return to Defend African Para Titles</p>
+                          <a href="https://www.ittf.com/2023/09/19/champions-return-to-defend-african-para-titles/" class="btn btn-primary">See More</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card news">
+                        <img src="imgs4Assign4/news6.jpeg" class="card-img-top" alt="Img" >
+                        <div class="card-body">
+                          <p class="card-text">Para Table Tennis Development Initiatives Take Center Stage </p>
+                          <a href="https://www.ittf.com/2023/10/03/para-table-tennis-development-initiatives-take-center-stage/" class="btn btn-primary">See More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="card" id="gamecard">
+        <div class="card-body">
+          <h5 class="card-title">Match Figures& Results</h5>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card text-center">
+                <img src="imgs4Assign4/logo1.png" class="card-img-top" alt="Img" >
+                <div class="card-body">
+                  <p class="card-text"> Team OX vs Team Sheep</p>
+                  <p class="card-text"> 10:8</p>
+                  <a href="https://www.bbc.com/news/av/world-europe-isle-of-man-66114176" class="btn btn-primary">Watch Replay</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center">
+                <img src="imgs4Assign4/logo2.png" class="card-img-top" alt="Img" >
+                <div class="card-body">
+
+
+                  <p class="card-text"> Team Eagle vs Team Jaguar</p>
+                  <p class="card-text"> 9:7</p>
+                  <a href="https://www.bbc.com/news/av/world-europe-isle-of-man-66114176" class="btn btn-primary">Watch Replay</a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-3">
+              <div class="card text-center">
+                <img src="imgs4Assign4/logo3.png" class="card-img-top" alt="Img" >
+                <div class="card-body">
+                  <p class="card-text"> Team Tiger vs Team Whale</p>
+                  <p class="card-text"> 2:8</p>
+                  <a href="https://www.bbc.com/news/av/world-europe-isle-of-man-66114176" class="btn btn-primary">Watch Replay</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3">
+              <div class="card text-center">
+                <img src="imgs4Assign4/logo4.png" class="card-img-top" alt="Img" >
+                <div class="card-body">
+                  <p class="card-text"> Team Giraffe vs Team Zebra</p>
+                  <p class="card-text"> 3:9</p>
+                  <a href="https://www.bbc.com/news/av/world-europe-isle-of-man-66114176" class="btn btn-primary">Watch Replay</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="card d-none d-sm-block" id="leaderscard">
+        <div class="card-body">
+          <h5 class="card-title">Club Hierarchy</h5>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+
+
+                <div class="text-center">
+                  <figure class="figure">
+                    <img src="imgs4Assign4/committee1 .png" class="figure-img img-fluid rounded" alt="Img">
+                    <figcaption class="figure-caption">Club Chairman</figcaption>
+                  </figure>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="text-center">
+                  <figure class="figure">
+                    <img src="imgs4Assign4/committee2.jpeg" class="figure-img img-fluid rounded" alt="Img">
+                    <figcaption class="figure-caption">Club Secretary</figcaption>
+                  </figure>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="text-center">
+                  <figure class="figure">
+                    <img src="imgs4Assign4/committee3.jpeg" class="figure-img img-fluid rounded" alt="Img">
+                    <figcaption class="figure-caption">Club Manager</figcaption>
+                  </figure>
+                </div>
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="card" id="messages">
+        <div class="card-body">
+
+          <h5 class="card-title">Message Borad</h5>
+          <div> <input type="text" placeholder="@handle" id="handle"  ></input></div>
+          <div>
+            <textarea id="commentArea" placeholder="Comment" class="commment" maxlength="280" oninput="updateCharacterCount(this)"  ></textarea>
+            <p id="countDown">280</p>
+          </div>
+          <button class="button" onclick="postComments()">Post</button>
+<!--          <div> <button id="button"  >Post Comment</button></div>-->
+          <div id="comments"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+<script src="javascripts/javascript.js"></script>
+<!--<div class="box">-->
+<!--  <div>-->
+<!--    <textarea id="commentArea" placeholder="Hi there I think it is great" class="commment" maxlength="280" oninput="updateCharacterCount(this)" ></textarea>-->
+<!--    <p id="countDown">280</p>-->
+
+<!--  </div>-->
+<!--  <div class="imags">-->
+<!--    <img src="imgs/camera.png">-->
+<!--    <img src="imgs/video.png">-->
+<!--    <img src="imgs/images.png">-->
+<!--    <button class="button" onclick="postComments()">Post</button>-->
+
+
+<!--  </div>-->
+<!--  <br>-->
+<!--  <div id="comments"></div>-->
+<!--</div>-->
+
+</body>
+</html>
